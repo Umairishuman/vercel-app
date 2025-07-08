@@ -7,6 +7,7 @@ tasks = []
 def get_tasks():
     return jsonify(tasks)
 
+
 @app.route('/api/tasks', methods=['POST'])
 def add_task():
     data = request.json
